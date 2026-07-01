@@ -1,0 +1,10 @@
+{
+  "login": "alice-eng",
+  "name": "Alice Engineer",
+  "email": "alice@example.com",
+  "location": "San Francisco, CA",
+  "company": "@TechCorp",
+  "bio": "Building scalable systems.",
+  "blog": "https://alice.dev",
+  "html_url": "https://github.com/alice-eng"
+}

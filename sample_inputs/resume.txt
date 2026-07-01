@@ -1,0 +1,22 @@
+Alice Engineer
+San Francisco, CA
+Email: alice.eng@email.com
+Phone: (555) 123-4567
+
+SUMMARY
+Experienced software engineer passionate about clean architecture.
+
+SKILLS
+Python, Go, FastAPI, Kubernetes, ETL Pipelines, SQL
+
+EXPERIENCE
+TechCorp - Senior Software Engineer
+Jan 2022 to Present
+- Led the migration of legacy monolith to microservices.
+
+Legacy Systems Inc - Software Engineer
+Jan 2019 to Jan 2022
+- Maintained backend APIs and database schemas.
+
+EDUCATION
+B.S. Computer Science, University of Tech

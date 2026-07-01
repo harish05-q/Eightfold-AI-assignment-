@@ -1,0 +1,28 @@
+[
+  {
+    "id": "ATS-9982",
+    "name": "Alice B. Engineer",
+    "email_address": "alice.eng@email.com",
+    "phone_number": "555-123-4567",
+    "location": {
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "USA"
+    },
+    "skills": ["Python", "Golang", "System Design"],
+    "work_history": [
+      {
+        "company": "Legacy Systems Inc",
+        "title": "Software Engineer",
+        "start_date": "2019-01-01",
+        "end_date": "2022-01-01"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Tech",
+        "degree": "B.S. Computer Science"
+      }
+    ]
+  }
+]

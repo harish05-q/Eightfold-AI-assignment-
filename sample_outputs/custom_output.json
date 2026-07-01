@@ -1,0 +1,59 @@
+{
+  "run_id": "ae3b7d8b-c772-4661-9982-6a6e2fe77fae",
+  "timing": {
+    "extraction": 0.015000000013969839,
+    "processor:FieldNormalizer": 0.10999999998603016,
+    "processor:SkillCanonicalizer": 0.0,
+    "processor:IdentityResolver": 0.0,
+    "processor:EvidenceMerger": 0.0,
+    "processor:ConfidenceScorer": 0.0,
+    "processing": 0.10999999998603016,
+    "projection_validation": 0.0,
+    "total": 0.125
+  },
+  "warnings": [],
+  "errors": [],
+  "candidates": [
+    {
+      "candidate_id": "cand_a76b702576d5",
+      "full_name": "Alice B. Engineer",
+      "emails": [
+        "alice.eng@email.com",
+        "alice@example.com"
+      ],
+      "skills": [
+        {
+          "name": "Go",
+          "sources": [
+            "ats"
+          ]
+        },
+        {
+          "name": "System Design",
+          "sources": [
+            "ats"
+          ]
+        },
+        {
+          "name": "Python",
+          "sources": [
+            "ats",
+            "resume"
+          ]
+        },
+        {
+          "name": "SQL",
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "FastAPI",
+          "sources": [
+            "resume"
+          ]
+        }
+      ]
+    }
+  ]
+}

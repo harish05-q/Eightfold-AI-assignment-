@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+      "path": "candidate_id",
+      "type": "string",
+      "required": true
+    },
+    {
+      "path": "full_name",
+      "type": "string",
+      "required": true
+    },
+    {
+      "path": "emails",
+      "type": "string[]"
+    },
+    {
+      "path": "skills",
+      "type": "object[]"
+    }
+  ],
+  "missing_policy": "error",
+  "include_confidence": false
+}

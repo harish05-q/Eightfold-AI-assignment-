@@ -1,0 +1,15 @@
+{
+    "react.js": "React",
+    "reactjs": "React",
+    "node": "Node.js",
+    "nodejs": "Node.js",
+    "node.js": "Node.js",
+    "vue": "Vue.js",
+    "vuejs": "Vue.js",
+    "k8s": "Kubernetes",
+    "aws": "Amazon Web Services",
+    "gcp": "Google Cloud Platform",
+    "ts": "TypeScript",
+    "js": "JavaScript",
+    "golang": "Go"
+}

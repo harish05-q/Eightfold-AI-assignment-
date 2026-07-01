@@ -1,0 +1,107 @@
+{
+  "run_id": "e962ad91-e3a5-4d7f-91c9-5dc7d26e2e3e",
+  "timing": {
+    "extraction": 0.0,
+    "processor:FieldNormalizer": 0.10899999999674037,
+    "processor:SkillCanonicalizer": 0.0,
+    "processor:IdentityResolver": 0.0,
+    "processor:EvidenceMerger": 0.0,
+    "processor:ConfidenceScorer": 0.0,
+    "processing": 0.10899999999674037,
+    "projection_validation": 0.0,
+    "total": 0.10899999999674037
+  },
+  "warnings": [],
+  "errors": [],
+  "candidates": [
+    {
+      "candidate_id": "cand_a76b702576d5",
+      "full_name": "Alice B. Engineer",
+      "emails": [
+        "alice.eng@email.com",
+        "alice@example.com"
+      ],
+      "phones": [
+        "5551234567",
+        "+15551234567"
+      ],
+      "location": {
+        "city": "San Francisco",
+        "region": "CA",
+        "country": "CA"
+      },
+      "links": {
+        "linkedin": null,
+        "github": "https://github.com/alice-eng",
+        "portfolio": "https://alice.dev",
+        "other": []
+      },
+      "headline": "Building scalable systems.",
+      "years_experience": null,
+      "skills": [
+        {
+          "name": "Go",
+          "confidence": 0.8,
+          "sources": [
+            "ats"
+          ]
+        },
+        {
+          "name": "System Design",
+          "confidence": 0.8,
+          "sources": [
+            "ats"
+          ]
+        },
+        {
+          "name": "Python",
+          "confidence": 0.75,
+          "sources": [
+            "ats",
+            "resume"
+          ]
+        },
+        {
+          "name": "SQL",
+          "confidence": 0.7,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "FastAPI",
+          "confidence": 0.7,
+          "sources": [
+            "resume"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "Legacy Systems Inc",
+          "title": "Software Engineer",
+          "start": "2019-01-01",
+          "end": "2022-01-01",
+          "summary": null
+        },
+        {
+          "company": "TechCorp",
+          "title": "Senior Software Engineer",
+          "start": null,
+          "end": null,
+          "summary": "Current position (extracted from CSV)"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Tech",
+          "degree": "B.S. Computer Science",
+          "field": "None",
+          "end_year": null
+        }
+      ],
+      "provenance": [],
+      "overall_confidence": 0.0
+    }
+  ]
+}

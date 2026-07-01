@@ -1,0 +1,17 @@
+{
+  "run_id": "0378eb9a-3186-44ca-bcd0-71e591e768ee",
+  "timing": {
+    "extraction": 0.0,
+    "processor:FieldNormalizer": 0.0,
+    "processor:SkillCanonicalizer": 0.014999999955762178,
+    "processor:IdentityResolver": 0.0,
+    "processor:EvidenceMerger": 0.0,
+    "processor:ConfidenceScorer": 0.0,
+    "processing": 0.014999999955762178,
+    "projection_validation": 0.0,
+    "total": 0.014999999955762178
+  },
+  "warnings": [],
+  "errors": [],
+  "candidates": []
+}

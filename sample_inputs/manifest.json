@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "source_type": "csv",
+      "path": "sample_inputs/recruiter.csv"
+    },
+    {
+      "source_type": "ats",
+      "path": "sample_inputs/ats_export.json"
+    },
+    {
+      "source_type": "github",
+      "path": "sample_inputs/github_profile.json"
+    },
+    {
+      "source_type": "resume",
+      "path": "sample_inputs/resume.txt"
+    }
+  ]
+}
