@@ -1,15 +1,15 @@
 {
-  "run_id": "ae3b7d8b-c772-4661-9982-6a6e2fe77fae",
+  "run_id": "034c947d-9d00-4f9b-8ba5-b8783c6118dc",
   "timing": {
-    "extraction": 0.015000000013969839,
-    "processor:FieldNormalizer": 0.10999999998603016,
+    "extraction": 0.0,
+    "processor:FieldNormalizer": 0.18800000002374873,
     "processor:SkillCanonicalizer": 0.0,
     "processor:IdentityResolver": 0.0,
     "processor:EvidenceMerger": 0.0,
     "processor:ConfidenceScorer": 0.0,
-    "processing": 0.10999999998603016,
+    "processing": 0.18800000002374873,
     "projection_validation": 0.0,
-    "total": 0.125
+    "total": 0.18800000002374873
   },
   "warnings": [],
   "errors": [],

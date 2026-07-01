@@ -1,7 +1,10 @@
 # Candidate Transformer Pipeline
 
 ## 🎥 Demo Video Link
-[Link to Demo Video] *(Replace with actual link)*
+
+
+https://streamable.com/pv1nhw
+
 
 A deterministic, configuration-driven pipeline for unifying unstructured candidate data across disparate sources (ATS, Recruiter CSVs, GitHub, Resumes). Built with Python 3.12, Clean Architecture, and SOLID principles.
 
@@ -18,7 +21,9 @@ A deterministic, configuration-driven pipeline for unifying unstructured candida
 ## 🚀 Exact Run Steps
 
 ### 1. Installation
+
 Ensure you have Python 3.12+ installed.
+
 ```bash
 # Clone the repository
 git clone <your-repo-url>
@@ -29,25 +34,32 @@ pip install -r requirements.txt
 ```
 
 ### 2. Run the End-to-End Pipeline (CLI)
+
 We have pre-configured a manifest that processes 4 distinct sources (ATS, Recruiter CSV, GitHub, Resume) belonging to a single fragmented identity ("Alice Engineer").
 
 Run the pipeline:
+
 ```bash
 python main.py sample_inputs/manifest.json -o sample_outputs/default_output.json
 ```
 
 **Running with Custom Config:**
+
 ```bash
 python main.py sample_inputs/manifest.json -c sample_inputs/custom_config.json -o sample_outputs/custom_output.json
 ```
 
 ### 3. Run the FastAPI Endpoints
+
 The application exposes a thin FastAPI wrapper to run the pipeline dynamically.
+
 ```bash
 # Start the server
 uvicorn candidate_transformer.api:app --reload
 ```
+
 Open another terminal and use `curl` to submit the manifest:
+
 ```bash
 curl -X POST "http://127.0.0.1:8000/transform" \
      -H "Content-Type: application/json" \
@@ -58,9 +70,10 @@ curl -X POST "http://127.0.0.1:8000/transform" \
 
 ## 📄 Produced Output
 
-After running the CLI command, the system deterministically resolves the 4 fragmented inputs into a single canonical candidate and maps it to the default JSON shape. 
+After running the CLI command, the system deterministically resolves the 4 fragmented inputs into a single canonical candidate and maps it to the default JSON shape.
 
 *Snippet of `sample_outputs/default_output.json`:*
+
 ```json
 {
   "run_id": "e962ad91-e3a5-4d7f-91c9-5dc7d26e2e3e",
@@ -110,11 +123,13 @@ After running the CLI command, the system deterministically resolves the 4 fragm
 The pipeline ships with **149 robust tests** providing 100% verification across isolated layers, error handling, and cross-source identity resolution edge cases.
 
 To run the test suite:
+
 ```bash
 pytest tests/ -v
 ```
 
 *Expected Output snippet:*
+
 ```
 ============================= test session starts =============================
 ...
@@ -138,7 +153,7 @@ tests/integration/test_pipeline_e2e.py::test_pipeline_e2e_with_sample_data PASSE
 
 ## ❌ Descoped Items
 
-1. **Fuzzy Name Matching**: Advanced Levenshtein distance or ML-based identity matching is descoped. 
+1. **Fuzzy Name Matching**: Advanced Levenshtein distance or ML-based identity matching is descoped.
 2. **PDF OCR Processing**: Parsing PDFs that are strictly images (non-selectable text) was descoped. The `resume_extractor` currently mocks the PDF binary extraction layer.
 3. **Authentication/Security**: The FastAPI endpoints do not include JWT or OAuth flows.
 4. **Database Persistence**: The `EvidenceRepository` is in-memory. Connecting to PostgreSQL or MongoDB was descoped to keep the pipeline easily runnable on any local machine.
